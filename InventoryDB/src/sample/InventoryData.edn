@@ -1,0 +1,32 @@
+[
+
+{:db/id #db/id [:db.part/user]
+  :Product/style "Pants"
+  :Product/size "A/XS"
+  :Product/price 34.99
+  :Product/pattern "Dazzle"
+  :Product/quantity 4}
+
+{:db/id #db/id [:db.part/user]
+  :Product/style "Pants"
+  :Product/size "Y/S"
+  :Product/price 19.99
+  :Product/pattern "USofA"
+  :Product/quantity 3}
+
+{:db/id #db/id [:db.part/user]
+  :Product/style "Capri"
+  :Product/size "A/XS"
+  :Product/price 34.99
+  :Product/pattern "Dazzle"
+  :Product/quantity 4}
+  
+
+{:db/id #db/id [:db.part/user]
+  :Product/style "Skorts"
+  :Product/size "A/XS"
+  :Product/price 34.99
+  :Product/pattern "Dazzle"
+  :Product/quantity 5}
+
+]

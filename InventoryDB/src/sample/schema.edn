@@ -1,0 +1,51 @@
+
+
+(comment 
+	style
+	size
+	pattern
+	)
+[
+
+{:db/id #db/id [:db.part/db]
+ :db/ident :Product/style
+ :db/doc "The style: pants, skirt, skort...etc"
+ :db/valueType :db.type/string
+ :db/index true
+ :db/cardinality :db.cardinality/one
+ :db.install/_attribute :db.part/db}
+
+{:db/id #db/id [:db.part/db]
+ :db/ident :Product/price
+ :db/doc "The price of a product"
+ :db/valueType :db.type/double
+ :db/index true
+ :db/cardinality :db.cardinality/one
+ :db.install/_attribute :db.part/db}
+
+{:db/id #db/id[:db.part/db]
+  :db/ident :Product/size
+  :db/doc "The size for each product"
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/many
+  :db/isComponent true
+  :db/index true
+  :db.install/_attribute :db.part/db}
+
+{:db/id #db/id [:db.part/db]
+ :db/ident :Product/pattern
+ :db/doc "The pattern of the product"
+ :db/valueType :db.type/string
+ :db/index true
+ :db/cardinality :db.cardinality/one
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id [:db.part/db]
+ :db/ident :Product/quantity
+ :db/doc "The amount of that product"
+ :db/valueType :db.type/long
+ :db/index true
+ :db/cardinality :db.cardinality/one
+ :db.install/_attribute :db.part/db}
+
+ ]
