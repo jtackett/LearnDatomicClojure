@@ -1,0 +1,35 @@
+
+
+(comment 
+	name (nm)
+  city
+  email
+	)
+[
+
+{:db/id #db/id [:db.part/db]
+ :db/ident :Business/nm
+ :db/doc "The name of the Business"
+ :db/valueType :db.type/string
+ :db/index true
+ :db/cardinality :db.cardinality/one
+ :db.install/_attribute :db.part/db}
+
+{:db/id #db/id [:db.part/db]
+ :db/ident :Business/city
+ :db/doc "The city where the business is located"
+ :db/valueType :db.type/string
+ :db/index true
+ :db/cardinality :db.cardinality/one
+ :db.install/_attribute :db.part/db}
+
+{:db/id #db/id[:db.part/db]
+  :db/ident :Business/email
+  :db/doc "The email for the business"
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/isComponent true
+  :db/index true
+  :db.install/_attribute :db.part/db}
+
+ ]

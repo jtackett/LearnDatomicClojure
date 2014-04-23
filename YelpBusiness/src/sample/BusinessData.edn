@@ -1,0 +1,23 @@
+[
+
+{:db/id #db/id [:db.part/user]
+  :Business/nm "John Arroyo, DDS"
+  :Business/city "Washington"
+  :Business/email "steven.jobs@apple.com"}
+
+{:db/id #db/id [:db.part/user]
+  :Business/nm "Watergate Dental Associates"
+  :Business/city "Washington"
+  :Business/email "wgda@watergatedental.com"}
+
+{:db/id #db/id [:db.part/user]
+  :Business/nm "Tackett Jerry L DMD"
+  :Business/city "Mars"
+  :Business/email "jtackett@zoominternet.net"}
+  
+{:db/id #db/id [:db.part/user]
+  :Business/nm "Southside Dental Pavilion"
+  :Business/city "Pittsburg"
+  :Business/email "drdunn@dental.com"}
+
+]
