@@ -1,0 +1,28 @@
+[
+
+{:db/id #db/id [:db.part/user]
+  :BalanceSheet/name "Straton Oakmont"
+  :BalanceSheet/year 2013}
+
+{:db/id #db/id [:db.part/user]
+  :Account/name "Cash"
+  :Account/value 500000.00
+  :BalanceSheet/Account (->> (d/q '[:find ?e :where 
+  				[?e :BalanceSheet/name "Straton Oakmont"]]
+          (d/db conn)) ffirst)}
+
+{:db/id #db/id [:db.part/user]
+  :Account/name "Inventory"
+  :Account/value 400000.00
+  :BalanceSheet/Account (->> (d/q '[:find ?e :where 
+  				[?e :BalanceSheet/name "Straton Oakmont"]]
+          (d/db conn)) ffirst)}
+
+{:db/id #db/id [:db.part/user]
+  :Account/name "Accounts Receivable"
+  :Account/value 300000.00
+    :BalanceSheet/Account (->> (d/q '[:find ?e :where 
+  				[?e :BalanceSheet/name "Straton Oakmont"]]
+          (d/db conn)) ffirst)}
+
+]

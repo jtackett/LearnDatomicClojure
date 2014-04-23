@@ -1,0 +1,45 @@
+
+[
+
+{:db/id #db/id [:db.part/db]
+ :db/ident :BalanceSheet/name
+ :db/doc "The name of the company"
+ :db/valueType :db.type/string
+ :db/index true
+ :db/cardinality :db.cardinality/one
+ :db.install/_attribute :db.part/db}
+
+{:db/id #db/id [:db.part/db]
+ :db/ident :BalanceSheet/year
+ :db/doc "The year of the Balance Sheet"
+ :db/valueType :db.type/long
+ :db/index true
+ :db/cardinality :db.cardinality/one
+ :db.install/_attribute :db.part/db}
+
+{:db/id #db/id[:db.part/db]
+  :db/ident :BalanceSheet/Account
+  :db/doc "Ref for Book to page"
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/many
+  :db/isComponent true
+  :db/index true
+  :db.install/_attribute :db.part/db}
+
+{:db/id #db/id [:db.part/db]
+ :db/ident :Account/name
+ :db/doc "The name of the account"
+ :db/valueType :db.type/string
+ :db/index true
+ :db/cardinality :db.cardinality/one
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id [:db.part/db]
+ :db/ident :Account/value
+ :db/doc ""
+ :db/valueType :db.type/double
+ :db/index true
+ :db/cardinality :db.cardinality/one
+ :db.install/_attribute :db.part/db}
+
+ ]
